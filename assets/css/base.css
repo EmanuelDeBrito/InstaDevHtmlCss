@@ -1,0 +1,62 @@
+/* Variáveis das cores que iremos usar */
+:root {
+    --background: #FFF;
+    --secondary: #CCC;
+    --primary: #000;
+    --secondary-foreground: #DDD;
+    --story-color1: #FFE700;
+    --story-color2: #EB0F7C;
+    --side-link: #0095F6;
+    --white: #FFF;
+}
+
+/* Caso o sistema do usuário esteja no dark mode as variáveis de cores serão alteradas para essas cores */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000;
+        --secondary: #121212;
+        --primary: #F5F5F5;
+        --secondary-foreground: #737373;
+    }
+}
+
+/* Configurações padrão para início de projeto */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+/* Para trabalhar com rem estamos usando o tamanho da fonte como 62.5% que deixa aproximadamente 1rem valendo 10px */
+html {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-color: var(--background);
+    color: var(--primary);
+    font-size: 1.6rem;
+    /* Aproximadamente 16px */
+}
+
+/* Estilização padrão dos icons */
+.icon {
+    display: inline-block;
+    width: 2.3rem;
+    height: 2.3rem;
+    transition: all ease .3s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+.icon svg {
+    color: var(--primary);
+}

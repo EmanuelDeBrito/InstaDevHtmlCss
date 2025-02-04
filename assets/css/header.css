@@ -1,0 +1,41 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: var(--background);
+    z-index: 99;
+}
+
+header .logo {
+    width: 10rem;
+    height: 3rem;
+    background-image: url('../images/logo/logo-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+    header .logo {
+        background-image: url('../images/logo/logo-white.png');
+    }
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (width > 900px) {
+    header {
+        display: none;
+    }
+}
