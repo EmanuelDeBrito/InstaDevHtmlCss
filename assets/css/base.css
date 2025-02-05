@@ -10,16 +10,6 @@
     --white: #FFF;
 }
 
-/* Caso o sistema do usuário esteja no dark mode as variáveis de cores serão alteradas para essas cores */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #000;
-        --secondary: #121212;
-        --primary: #F5F5F5;
-        --secondary-foreground: #737373;
-    }
-}
-
 /* Configurações padrão para início de projeto */
 * {
     padding: 0;
@@ -59,4 +49,14 @@ body {
 
 .icon svg {
     color: var(--primary);
+}
+
+/* Caso o sistema do usuário esteja no dark mode as variáveis de cores serão alteradas para essas cores */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #000;
+        --secondary: #121212;
+        --primary: #F5F5F5;
+        --secondary-foreground: #737373;
+    }
 }

@@ -12,6 +12,63 @@ main nav {
     border-right: 1px solid var(--secondary-foreground);
 }
 
+nav .logo {
+    display: none;
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem 0 3rem 1rem;
+    background-image: url('../images/logo/logo-black.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    color: var(--primary);
+    font-size: 1.7rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: all ease .3s;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: var(--secondary-foreground);
+}
+
+nav ul li a span {
+    display: none;
+}
+
+main .general-area {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.general-area .feed {
+    width: 100%;
+}
+
+.general-area aside {
+    display: none;
+    width: 30rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    nav .logo {
+        background-image: url('../images/logo/logo-white.png');
+    }
+}
+
 @media (width > 900px) {
     main {
         padding: 2rem 0 0 6rem;
@@ -20,6 +77,14 @@ main nav {
     main nav {
         display: block;
         width: 6rem;
+    }
+
+    .general-area .feed {
+        max-width: 50rem;
+    }
+
+    .general-area aside {
+        display: block;
     }
 }
 
@@ -30,5 +95,13 @@ main nav {
 
     main nav {
         width: 24rem;
+    }
+
+    nav .logo {
+        display: block;
+    }
+
+    nav ul li a span {
+        display: block;
     }
 }

@@ -1,0 +1,120 @@
+/* Estilização geral do aside */
+aside a {
+    color: var(--side-link);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all ease .3s;
+}
+
+aside a:hover {
+    color: var(--primary);
+}
+
+aside .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+aside .user-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    border: 2px solid var(--secondary-foreground);
+    border-radius: 50px;
+}
+
+aside .user-avatar img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+}
+
+aside .user-info {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+aside .user-nick {
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+aside .user-name {
+    color: var(--secondary-foreground);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+aside .follow-suggestions {
+    margin-top: 2rem;
+}
+
+.follow-suggestions .follow-suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-suggestions-header .follow-suggestions-title {
+    color: var(--secondary-foreground);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.follow-suggestions .follow-suggestions-action {
+    color: var(--primary);
+}
+
+.follow-suggestions .follow-suggestions-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.follow-suggestions-area .follow-suggestions-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.follow-suggestions-item img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.follow-suggestions-item .follow-suggestions-item-info {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+.follow-suggestions-item-info .follow-suggestions-item-nick {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.follow-suggestions-item-name {
+    color: var(--secondary-foreground);
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
